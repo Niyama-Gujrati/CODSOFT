@@ -1,52 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnHub - Educational Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-       <div class="calculator">
-        <form>
-            <div class="display">
-                <input type="text" name="display">
-            </div>
-            <div>
-                <input type="button" value="AC" onclick="display.value = '' " class="operator">
-                <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1) " class="operator">
-                <input type="button" value="." onclick="display.value += '.' " class="operator">
-                <input type="button" value="/" onclick="display.value += '/' " class="operator">
-            </div>
-            <div>
-                <input type="button" value="7" onclick="display.value += '7' ">
-                <input type="button" value="8" onclick="display.value += '8' ">
-                <input type="button" value="9" onclick="display.value += '9' ">
-                <input type="button" value="*" onclick="display.value += '*' " class="operator">
-            </div>
-            <div>
-                <input type="button" value="4" onclick="display.value += '4' ">
-                <input type="button" value="5" onclick="display.value += '5' ">
-                <input type="button" value="6" onclick="display.value += '6' ">
-                <input type="button" value="-" onclick="display.value += '-' " class="operator">
-            </div>
-            <div>
-                <input type="button" value="1" onclick="display.value += '1' ">
-                <input type="button" value="2" onclick="display.value += '2' ">
-                <input type="button" value="3" onclick="display.value += '3' ">
-                <input type="button" value="+" onclick="display.value += '+' " class="operator">
-            </div>
-            <div>
-                <input type="button" value="00" onclick="display.value += '00' " class="operator">
-                <input type="button" value="0" onclick="display.value += '0' " class="operator">
-                <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal" class="operator" >
-              
-            </div>
-        </form>
-
-       </div> 
-       </div>
+  <header>
+    <h1>Welcome to LearnHub</h1>
+    <p>Your gateway to knowledge and growth!</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="hero">
+    <h2>Unlock Your Potential with Us</h2>
+    <button onclick="location.href='#courses'">Explore Courses</button>
+  </div>
+  <section id="about">
+    <h2>About Us</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7C-mv5teLsOlDyagUv060IG-NX1IbjtKDkw&s" alt="About Us Image" class="section-image">
+    <p>LearnHub is an online platform offering top-notch courses to help students and professionals achieve their goals. Our mission is to make learning accessible, affordable, and enjoyable.</p>
+  </section>
+  <section id="courses">
+    <h2>Our Popular Courses</h2>
+    <div class="course">
+      <img src="https://wayspire.in/wp-content/uploads/2022/11/web-development.jpg" alt="Web Development">
+      <h3>Web Development</h3>
+      <p>Learn to build modern websites using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="course">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2RzGeikAnS5cPgbYPavFrQmzbb6FVoTjWPw&s" alt="Data Science">
+      <h3>Data Science</h3>
+      <p>Master data analysis, Python, and visualization tools.</p>
+    </div>
+    <div class="course">
+      <img src="https://kritagyata.in/wp-content/uploads/2024/01/graphic-design-1500-x-900-picture-lpuf40e9jm621ews.jpg" alt="Graphic Design">
+      <h3>Graphic Design</h3>
+      <p>Explore the world of design with Photoshop, Illustrator, and more.</p>
+    </div>
+  </section>
+  <section id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial">
+      <img src="https://lh5.googleusercontent.com/-IPreTeIht_I/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclAf5TfaRPgR7dcmJjtLupIhfa8Aw/photo.jpg" alt="Student 1">
+      <p>"LearnHub transformed my career! The courses are easy to follow and incredibly insightful."</p>
+      <h4>- Sarah.</h4>
+    </div>
+    <div class="testimonial">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQIeTYHE7DTh4K2WjvcX7BDNeZbkvMvB5gmA&s" alt="Student 2">
+      <p>"I highly recommend LearnHub to anyone looking to upskill in their profession."</p>
+      <h4>- Mark.</h4>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Do I need prior experience?</h3>
+      <p>No, our courses cater to all levels, from beginners to experts.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Are the courses certified?</h3>
+      <p>Yes, you will receive a certificate upon completing each course.</p>
+    </div>
+  </section>
+  <section id="contact">
    
+    <h2>Contact Us</h2>
+  
+    <p>Have questions? Reach out to us at <a href="mailto:support@learnhub.com">support@learnhub.com</a></p>
+ 
+  </section>
+  <footer>
+    <p>&copy; 2024 LearnHub. All rights reserved.</p>
+    <p>Follow us: 
+      <a href="#">Facebook</a> | 
+      <a href="#">Twitter</a> | 
+      <a href="#">LinkedIn</a>
+    </p>
+  </footer>
 </body>
 </html>
